@@ -1,0 +1,110 @@
+.html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-color: rgb(215, 239, 250);
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+.header {
+  background-color: rgb(200, 232, 248);
+  align-items: center;
+  padding: 2rem;
+}
+.header__name {
+  color: #270102;
+}
+.container {
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(186, 232, 247);
+  text-align: left;
+}
+.navbar {
+  background-color: rgb(171, 230, 249);
+  text-align: start;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.navbar__list {
+  /* display: flex;
+  justify-content: space-around;
+  list-style: none; */
+}
+
+.navbar__item {
+}
+
+a {
+  text-decoration: none;
+}
+/* animation */
+.first__animation {
+  animation-duration: 3s;
+  animation-name: slider;
+  text-shadow: #eea8fe 1px 0 10px;
+}
+@keyframes slider {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+  45% {
+    font-size: 300%;
+    margin-left: 35%;
+    width: 150%;
+  }
+  25% {
+    font-size: 300%;
+    margin-left: 85%;
+    width: 125%;
+  }
+  85% {
+    margin-left: 75%;
+    width: 100%;
+  }
+}
+
+.second__animation {
+  /* animation-duration: 3s;
+  animation-name: slider;
+  animation-iteration-count: 2;
+  animation-direction: alternate; */
+  animation: slider 3s 2 alternate;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* carousel */
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.carousel {
+  background-color: #ffffff;
+  display: flex;
+  height: 100px;
+}
+.slider {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* animation: slideshow 10s linear infinite; */
+transform: translateX();
+}
+tra
+.slide__item {
+  height: calc(100% - 40px);
+  margin: 0 40px;
+}
